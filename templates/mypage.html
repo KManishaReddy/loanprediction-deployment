@@ -3,20 +3,20 @@
 <head>
     <title>Prediction of Loan Approval</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" \
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" \
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"\
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"\
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"\
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"\
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"\
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="">
     <style>
-    <!--nav
-    {
-        background-color: orange;#48b4e0
-        #75e2e9
-    }-->
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button 
     {
@@ -43,7 +43,7 @@
     {
           box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
           transition: 0.3s;
-          wnameth: 65%;
+          width: 65%;
           padding : 10px;
           border-radius: 15px;
           justify-content: center;
@@ -74,6 +74,14 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    .but
+    {
+        margin-left: 38%;
+    }
+    .hd
+    {
+        margin-left: 15%;
+    }
     </style>
 </head>
 <body>
@@ -82,64 +90,117 @@
     <div class="container-fluname">
         <div class="row">
             <div class="col-md-6 col-sm-12 bg">
-                <h3> Instruction to fill the form </h3><br style="line-height: 5px">
+                <h3 class="but"> About us </h3><br style="line-height: 5px">
                 <p>
-                <b>Gender:</b>	Male: 1 / Female:0 <br>
+                    This page helps you to know if your loan gets approved or not.<br>
+                    The only thing you need to do is to enter basic information regarding your loan.<br>
+                    We care about your privacy.<br>
+                    And your data is not been stored.<br.
+                </p>
+                <h3 class="hd"> Instruction to fill the form </h3><br style="line-height: 5px">
+                <p>
+                <!--<b>Gender:</b>	Male: 1 / Female:0 <br>
                 <b>Married:</b>	Applicant married (Yes: 1/No: 0) <br>
                 <b>Dependents: </b>	Number of dependents (0/1/2/ 3+ : 3) <br>
                 <b>Education: </b> 	Applicant Education (Graduate: 1/ Not Graduate: 0)<br>
                 <b>Self_Employed: </b>	Self employed (Yes: 1/No: 0)<br>
-                <b>ApplicantIncome: </b> 	Applicant income(Enter the amount in dollars) <br>
-                <b>CoapplicantIncome: </b> 	Coapplicant income(Enter the amount in dollars) <br>
-                <b>LoanAmount: </b> 	Loan amount (Enter the amount in dollars)<br>
-                <b>Loan_Amount_Term: </b>	Term of loan in months (No of days)<br>
+                <b>Loan_Amount_Term: </b>	Term of loan in months <br>
                 <b>Credit_History: </b>	have credit history or not (Yes: 1/ No: 0)<br>
-                <b>Property_Area: </b>	Rural: 0 / Semi Urban: 1/ Urban: 2 <br>
+                <b>Property_Area: </b>	Rural: 0 / Semi Urban: 1/ Urban: 2 <br>-->
+                <b>Applicant Income: </b> 	Income of the Applicant <br> (Enter the amount in dollars) <br>
+                <b>Coapplicant Income: </b>  Income of the Coapplicant <br> (Enter the amount in dollars) <br>
+                <b>Loan Amount: </b> Amount of loan required <br> (Enter the amount in dollars)<br><br>
+                *NOTE : All the fields must be filled to get your result.
                 </p>
             </div>
             <div class="col-md-6 col-sm-12 info">
-            <h3 style= "color: #3786bd">Loan Approval Predictor</h3>
+            <h3 style= "color: #3786bd" class="hd">Loan Approval Predictor</h3>
             <br style="line-height: 10px">
             <form action= '/predict' method="POST">
             <table>
                 <tr><th><label> Name </label></th>
-                <td><input type="text" name="Name"></tb></tr>
-        
-                <tr><th><label> Gender </label></th>
-                <td><input type="number" name="Gender" required></td></tr>
+                <td><input class="form-control" type="text" name="Name" placeholder="Enter name" required></tb></tr>
                 
-                <tr><th><label> Married </label></th>
-                <td><input type="number" name="Married" required></td></tr>
+                <!--<tr><th><label> Credit History </label></th>
+                <td><input type="number" name="Credit_History" min = 0 max = 1 required></td></tr>-->
                 
-                <tr><th><label> Education </label></th>
-                <td><input type="number" name="Education" required></td></tr>
-                
-                <tr><th><label> Self Employed </label></th>
-                <td><input type="number" name="Self_Employed" required></td></tr>
-                
-                <tr><th><label> Applicant Income </label></th>
-                <td><input type="number" name="ApplicantIncome" required></td></tr>
-                
-                <tr><th><label> Coapplicant Income </label></th>
-                <td><input type="number" name="CoapplicantIncome" required></td></tr>
-                
-                <tr><th><label> Loan Amount </label></th>
-                <td><input type="number" name="LoanAmount" required></td></tr>
-                
-                <tr><th><label> Loan Amount Term </label></th>
-                <td><input type="number" name="Loan_Amount_Term" required></td></tr>
-                
-                <tr><th><label> Credit History </label></th>
-                <td><input type="number" name="Credit_History" required></td></tr>
-                
-                <tr><th><label> Property Area </label></th>
-                <td><input type="number" name="Property_Area" required></td></tr>
+                <!--<tr><th><label> Property Area </label></th>
+                <td><input type="number" name="Property_Area" min = 0 max = 2 required></td></tr>
                 
                 <tr><th><label> Dependents </label></th>
-                <td><input type="number" name="Dependents" required></td></tr>
+                <td><input type="number" name="Dependents" min = 0 max = 3 required></td></tr>
+
+                <tr><th><label> Gender </label></th>
+                <td><input type="number" name="gender" min = 0 max=1 required></td></tr> -->
+                
+                <!--<tr><th><label> Married </label></th>
+                <td><input type="number" name="Married" min = 0 max=1 required></td></tr>-->
+                
+                <!--<tr><th><label> Education </label></th>
+                <td><input type="number" name="Education" min = 0 max=1 required></td></tr>-->
+                
+                <!--<tr><th><label> Self Employed </label></th>
+                <td><input type="number" name="Self_Employed" min = 0 max=1 required></td></tr>-->
+
+                <tr><th>Gender</p></th>
+                    <td><input type="radio" id="male" name="Gender" value=1 required>
+                        <label for="male">Male</label>&emsp;
+                        <input type="radio" id="female" name="Gender" value=0>
+                        <label for="female">Female</label></td></tr>
+                
+                <tr><th>Married</p></th>
+                    <td><input type="radio" id="Yes" name="Married" value=1 required>
+                        <label for="Yes">Yes</label>&emsp;
+                        <input type="radio" id="No" name="Married" value=0>
+                        <label for="No">No</label></td></tr>
+                <tr><th>Education</p></th>
+                    <td><input type="radio" id="Yes" name="Education" value=1 required>
+                            <label for="Yes">Graduate</label>&emsp;
+                            <input type="radio" id="No" name="Education" value=0>
+                            <label for="No">Not Graduate</label></td></tr>
+                <tr><th>Self Employed</p></th>
+                    <td><input type="radio" id="Yes" name="Self_Employed" value=1 required>
+                        <label for="Yes">Yes</label>&emsp;
+                        <input type="radio" id="No" name="Self_Employed" value=0>
+                        <label for="No">No</label></td></tr>
+                
+                <tr><th><label> Applicant Income </label></th>
+                <td><input class="form-control" type="number" name="ApplicantIncome" placeholder="In dollars" required></td></tr>
+                
+                <tr><th><label> Coapplicant Income </label></th>
+                <td><input class="form-control" type="number" name="CoapplicantIncome" placeholder="In dollars" required></td></tr>
+                
+                <tr><th><label> Loan Amount </label></th>
+                <td><input class="form-control" type="number" name="LoanAmount" placeholder="In dollars" required></td></tr>
+                
+                <tr><th><label> Loan Amount Term </label></th>
+                <td><input class="form-control" type="number" name="Loan_Amount_Term" placeholder="In months"required></td></tr>
+
+                <tr><th>Credit History</p></th>
+                    <td><input type="radio" id="Yes" name="Credit_History" value=1 required>
+                        <label for="Yes">Yes</label>&emsp;
+                        <input type="radio" id="No" name="Credit_History" value=0>
+                        <label for="No">No</label></td></tr>
+
+                <tr><th>Property Area</p></th>
+                    <td><input type="radio" id="Rural" name="Property_Area" value=0 required>
+                        <label for="Rural">Rural</label>&ensp;
+                        <input type="radio" id="SemiUrban" name="Property_Area" value=1>
+                        <label for="SemiUrban">SemiUrban</label>&ensp;
+                        <input type="radio" id="Urban" name="Property_Area" value=2>
+                        <label for="Urban">Urban</label></td></tr>
+                <tr><th>Dependents</p></th>
+                    <td><input type="radio" id="Zero" name="Dependents" value=0 required>
+                            <label for="Zero">0</label>&ensp;
+                            <input type="radio" id="One" name="Dependents" value=1>
+                            <label for="One">1</label>&ensp;
+                            <input type="radio" id="Two" name="Dependents" value=2>
+                            <label for="Two">2</label>&ensp;
+                            <input type="radio" id="Three" name="Dependents" value=3>
+                            <label for="Three">3+</label></td></tr>
             </table>
         
-                <input type="submit" class = "btn btn-primary">
+                <input type="submit" class="btn btn-primary but">
             </form>
             </div>
         </div>
